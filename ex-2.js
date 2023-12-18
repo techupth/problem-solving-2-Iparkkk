@@ -1,8 +1,18 @@
-//Exercise 2: Fizz Buzz
-
-const fizzBuzz = function (n) {
-  //Start coding here
-};
+function fizzBuzz(number) {
+  let newArray = [];
+  for (let i = 0; i < number; i++) {
+    if ((i + 1) % 3 == 0 && (i + 1) % 5 == 0) {
+      newArray.push("FizzBuzz");
+    } else if ((i + 1) % 3 == 0) {
+      newArray.push("Fizz");
+    } else if ((i + 1) % 5 == 0) {
+      newArray.push("Buzz");
+    } else {
+      newArray.push(i + 1);
+    }
+  }
+  return newArray;
+}
 
 const result1 = fizzBuzz(3);
 const result2 = fizzBuzz(5);
